@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Mulish_aeca05", "Mulish_Fallback_aeca05", sans-serif;
+  font-style: normal;
+  overflow-x: hidden
+}
+
+.container {
+  @apply w-[88%] max-w-[1250px] mx-auto;
+}
+
+h1 {
+  @apply text-black text-center leading-10 text-[30px] md:text-[42px] lg:leading-[53px] xl:text-left font-bold antialiased;
+}
+
+h2 {
+  @apply text-[#020A19] mt-8 font-bold text-[24px] leading-[26px] sm:text-[28px] md:text-[30px]  sm:leading-[40px];
+}
