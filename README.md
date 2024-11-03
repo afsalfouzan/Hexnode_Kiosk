@@ -32,14 +32,19 @@ To start the development server, run:
 ### Available Scripts
 
 In the project directory, you can run:
+
     npm test: Launches the test runner in interactive watch mode.
     npm run build: Builds the app for production to the build folder.
     npm run eject: Removes the single build dependency from your project (use with caution).
+
 Features
+
     Responsive design with Tailwind CSS.
     Hamburger menu for navigation.
     Support for various platforms and features.
+
 Usage
+
     Use this project as a template to create your own kiosk application. Feel free to customize styles, components, and functionality according to your needs.
 
 ### License
