@@ -36,7 +36,7 @@ function Banner1() {
 
   return (
     <main>
-      <div className="container flex flex-col xl:flex-row-reverse justify-between items-center mt-10">
+      <div className="container flex flex-col xl:flex-row-reverse justify-between items-center pt-14">
         <div className="w-full max-w-full md:max-w-[597px] max-[420px]:max-h-[258px] max-[420px]:mb-[40px]">
           <img
             className="w-full h-full object-fill"

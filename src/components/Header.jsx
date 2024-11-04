@@ -29,14 +29,15 @@ function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
-    <main>
+    <main className="">
       <div
-        className={` w-full min-h-[78px] flex transition-colors duration-500 ${
+        className={`w-full  min-h-[78px] pt-3 transition-colors duration-500 ${
           scrolled ? "bg-white" : "bg-gray-950"
-        } ${topHeader ? "hidden md:block bg-white pt-3" : ""}`}
+        } ${topHeader ? "hidden md:block bg-white" : ""}`}
       >
-        <div className="container mx-auto flex items-center justify-between relative">
+        <div className="container flex items-center justify-between relative">
           <div className="w-28">
             <img
               className={`w-full h-full object-fill ${
@@ -46,23 +47,27 @@ function Header() {
               alt="Logo"
             />
           </div>
-          <div className="flex items-center gap-3 ">
-            <button
-              className={`bg-red-600 w-full shadow-lg text-white py-2 rounded-sm uppercase hover:bg-red-700 transition duration-500 hidden px-4 ${
-                topHeader ? "  md:block xl:hidden" : ""
-              }`}
-            >
-              14 Days Free Trial
-            </button>
+          <div className="flex items-center justify-center gap-14">
+            <div>
+              <button
+                className={`bg-red-600 w-full text-xs shadow-lg text-white py-2 rounded-sm uppercase hover:bg-red-700 transition duration-500 hidden px-4 ${
+                  topHeader ? "md:block xl:hidden" : ""
+                }`}
+              >
+                14 Days Free Trial
+              </button>
+            </div>
             <div
-              className={`xl:hidden  ${
+              className={`xl:hidden flex items-center justify-center  ${
                 isOpen || scrolled ? "text-black" : "text-white"
               }`}
             >
-              <Hamburger toggled={isOpen} toggle={setOpen} size={25} />
+              <div className="absolute right-0 z-50">
+                <Hamburger toggled={isOpen} toggle={setOpen} size={25} />
+              </div>
             </div>
           </div>
-          <div className="hidden xl:block pr-10">
+          <div className="hidden xl:block">
             <button className="bg-red-600 w-full mr-10 text-white py-2 text-sm shadow-lg rounded-sm uppercase hover:bg-red-700 transition duration-500 px-4">
               14 Days Free Trial
             </button>
@@ -76,7 +81,7 @@ function Header() {
         }`}
       >
         <div className="container  flex items-center justify-end">
-          <button className="max-w-[200px] bg-red-600 w-full shadow-lg text-white py-3 rounded-sm uppercase hover:bg-red-700 transition duration-200 px-4 text-sm">
+          <button className="max-w-[200px] bg-red-600 w-full shadow-lg text-white py-2 rounded-sm uppercase hover:bg-red-700 transition duration-200 px-4 text-sm">
             14 Days Free Trial
           </button>
         </div>

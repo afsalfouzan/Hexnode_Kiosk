@@ -11,12 +11,12 @@ import Banner6 from "../components/Banner6";
 const MainLayout = () => {
   return (
     <div>
-      <div className="fixed top-0 w-full z-50">
+      <div className="fixed top-0 left-0 right-0 z-50">
         <Header />
       </div>
 
       <main>
-        <section className="bg-gray-950">
+        <section className="bg-gray-950 w-full">
           <Banner1 />
         </section>
         <section className="bg-white">
@@ -34,7 +34,7 @@ const MainLayout = () => {
         <section className="bg-gray-950">
           <Banner6 />
         </section>
-      </main>
+      </main> 
 
       <Footer />
     </div>

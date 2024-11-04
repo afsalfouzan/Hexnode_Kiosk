@@ -15,11 +15,11 @@ function Banner6() {
   return (
     <main className="container py-10">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="my-10 text-white text-center ">
+        <h1 className="mb-10 text-white text-center ">
           Sign up and try Hexnode free for 14 days!
         </h1>
-        <div className="">
-          <div className="flex flex-col gap-5 min-w-[400px] md:flex-row md:min-w-[600px]">
+        <div className="mx-10">
+          <div className="flex flex-col gap-5 min-w-[300px] md:flex-row md:min-w-[600px]">
             <input
               type="email"
               placeholder="Your Work Email"
