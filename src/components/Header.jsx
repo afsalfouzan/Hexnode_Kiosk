@@ -33,7 +33,7 @@ function Header() {
   return (
     <main className="">
       <div
-        className={`w-full  min-h-[78px] pt-3 transition-colors duration-500 ${
+        className={`w-full  min-h-[70px] pt-2 transition-colors duration-500 ${
           scrolled ? "bg-white" : "bg-gray-950"
         } ${topHeader ? "hidden md:block bg-white" : ""}`}
       >
@@ -76,7 +76,7 @@ function Header() {
       </div>
 
       <div
-        className={`md:hidden w-full min-h-[84px] border-t bg-white flex items-center justify-end transition-colors duration-500 ${
+        className={`md:hidden w-full min-h-[70px] border-t bg-white flex items-center justify-end transition-colors duration-500 ${
           changeHeader ? "block md:hidden" : "hidden"
         }`}
       >
